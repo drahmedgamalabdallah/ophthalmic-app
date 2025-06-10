@@ -1,0 +1,15 @@
+[[pages]]
+path = "app.py"
+name = "Main Page"
+
+[[pages]]
+path = "pages/1_Refractive_Planner.py"
+name = "Refractive Planner"
+
+[[pages]]
+path = "pages/2_Strabismus_Planner.py"
+name = "Strabismus Planner"
+
+[[pages]]
+path = "pages/3_About.py"
+name = "About"

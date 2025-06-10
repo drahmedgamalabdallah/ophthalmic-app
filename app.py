@@ -19,18 +19,24 @@ Welcome to the **Ophthalmic AI Planner**, a clinical decision-support tool desig
 This platform provides:
 - 📈 **Refractive surgery analysis** to assist in selecting LASIK, PRK, Phakic or Pseudophakic IOLs.
 - 🎯 **Strabismus surgery planning** using intelligent nomograms based on deviation types and amounts.
-- 💡 Educational insight into the logic behind planning algorithms.
-
-Feel free to explore the tools:
+- 💡 Educational insights
 """)
 
 # Divider
 st.divider()
 
-# Page links
-st.page_link("pages/1_Refractive_Planner.py", label="🔍 Refractive Planner", icon="📈")
-st.page_link("pages/2_Strabismus_Planner.py", label="🎯 Strabismus Planner", icon="🧠")
-st.page_link("pages/3_About.py", label="ℹ️ About This App", icon="ℹ️")
+# Styled subpage links
+st.markdown("### 🔗 Navigate to Tools")
+st.markdown(
+    """
+    <ul style='font-size: 20px; line-height: 2; list-style-type: none; padding-left: 0;'>
+        <li>👉 <a href='/1_Refractive_Planner' target='_self'>📈 Refractive Planner</a></li>
+        <li>👉 <a href='/2_Strabismus_Planner' target='_self'>🧠 Strabismus Planner</a></li>
+        <li>👉 <a href='/3_About' target='_self'>ℹ️ About This App</a></li>
+    </ul>
+    """,
+    unsafe_allow_html=True
+)
 
 # Footer spacing
 st.markdown(" ")

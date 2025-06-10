@@ -25,18 +25,20 @@ This platform provides:
 # Divider
 st.divider()
 
-# Styled subpage links
-st.markdown("### 🔗 Navigate to Tools")
-st.markdown(
-    """
-    <ul style='font-size: 20px; line-height: 2; list-style-type: none; padding-left: 0;'>
-        <li>👉 <a href='/1_Refractive_Planner' target='_self'>📈 Refractive Planner</a></li>
-        <li>👉 <a href='/2_Strabismus_Planner' target='_self'>🧠 Strabismus Planner</a></li>
-        <li>👉 <a href='/3_About' target='_self'>ℹ️ About This App</a></li>
-    </ul>
-    """,
-    unsafe_allow_html=True
-)
+# Navigation using buttons
+st.markdown("### Navigate to Tools")
+
+col1, col2, col3 = st.columns(3)
+with col1:
+    if st.button("Refractive Planner"):
+        st.switch_page("pages/1_Refractive_Planner.py")
+with col2:
+    if st.button("Strabismus Planner"):
+        st.switch_page("pages/2_Strabismus_Planner.py")
+with col3:
+    if st.button("About This App"):
+        st.switch_page("pages/3_About.py")
+
 
 # Footer spacing
 st.markdown(" ")

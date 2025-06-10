@@ -53,9 +53,6 @@ if st.button("Refractive Planner"):
 if st.button("Strabismus Planner"):
     st.switch_page("pages/2_Strabismus_Planner.py")
 
-if st.button("About This App"):
-    st.switch_page("pages/3_About.py")
-
 
 # Footer spacing
 st.markdown(" ")

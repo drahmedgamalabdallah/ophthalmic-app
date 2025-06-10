@@ -29,15 +29,18 @@ st.divider()
 st.markdown(
     """
     <style>
-        .stButton>button {
-            font-size: 20px;
-            width: 100%;
-            padding: 0.75em;
-            margin: 0.5em 0;
-            background-color: #4A8FE7;
-            color: white;
-            border-radius: 10px;
-        }
+    div.stButton > button {
+        display: block;
+        margin: 0 auto;
+        height: 3.5em;
+        width: 50%;
+        font-size: 1.3em;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+        border: 2px solid #ccc;
+    }
     </style>
     """,
     unsafe_allow_html=True

@@ -1,5 +1,5 @@
 import streamlit as st
-from logic.refractive_logic import run_refractive_analysis
+from refractive_logic import run_refractive_analysis
 
 st.set_page_config(page_title="Refractive Surgery Planner", layout="centered")
 

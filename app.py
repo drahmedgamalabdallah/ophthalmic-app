@@ -25,19 +25,33 @@ This platform provides:
 # Divider
 st.divider()
 
-# Navigation using buttons
-st.markdown("### Navigate to Tools")
+# Styled vertical buttons
+st.markdown(
+    """
+    <style>
+        .stButton>button {
+            font-size: 20px;
+            width: 100%;
+            padding: 0.75em;
+            margin: 0.5em 0;
+            background-color: #4A8FE7;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-col1, col2, col3 = st.columns(3)
-with col1:
-    if st.button("Refractive Planner"):
-        st.switch_page("pages/1_Refractive_Planner.py")
-with col2:
-    if st.button("Strabismus Planner"):
-        st.switch_page("pages/2_Strabismus_Planner.py")
-with col3:
-    if st.button("About This App"):
-        st.switch_page("pages/3_About.py")
+# Create buttons
+if st.button("Refractive Planner"):
+    st.switch_page("pages/1_Refractive_Planner.py")
+
+if st.button("Strabismus Planner"):
+    st.switch_page("pages/2_Strabismus_Planner.py")
+
+if st.button("About This App"):
+    st.switch_page("pages/3_About.py")
 
 
 # Footer spacing

@@ -126,14 +126,14 @@ def run_full_analysis(sphere, cylinder, optical_zone, preop_pachy, K1_pre, K2_pr
         preop_pachy >= 500 and
         postop_pachy >= 410 and
         34 <= postop_Kavg <= 50 and
-        ablation_depth <= 145
+        ablation_depth <= 150
     )
 
     prk_eligible = (
         sphere < 0 and
         preop_pachy >= 460 and
         postop_pachy >= 400 and
-        ablation_depth <= 95 and
+        ablation_depth <= 100 and
         34 <= postop_Kavg <= 50
     )
 
@@ -148,6 +148,7 @@ def run_full_analysis(sphere, cylinder, optical_zone, preop_pachy, K1_pre, K2_pr
         (sphere <= -8 or sphere > +6 or postop_pachy < 400)
     )
 
+    
     recommendations = []
 
     if lasik_eligible:
